@@ -102,7 +102,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'https://diegorey-resume.tiiny.site/', //paste the link to your resume here
+                  'https://drive.google.com/file/d/1WlqJ_OZRGQY63ngDDeEGDAmCfoyPwdZ8/view?usp=sharing', 
                   '_blank'
                 )
               }

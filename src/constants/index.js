@@ -48,20 +48,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
     title: 'Electrical Engineer',
     icon: backend,
   },
   {
     title: 'Researcher',
-    icon: ux,
+    icon: ux, 
   },
   {
     title: 'Resident Assistant',
     icon: prototyping,
+  },
+  {
+    title: 'Frontend Developer',
+    icon: frontend,
   },
 ];
 
@@ -136,6 +136,56 @@ const experiences = [
 ];
 
 const projects = [
+
+  {
+    id: 'project-4',
+    name: 'Nano-Electronics and Computing Research Laboratory',
+    description: 'Engaging job shadowing and gaining firsthand experience in computing circuits',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: nyeusi,
+    
+    demo: 'https://engineering.sfsu.edu/research-labs-and-centers',
+
+  },
+
+  {
+    id: 'project-5',
+    name: 'Infinity Helmet',
+    description: 'led a team to design a low-cost hurricane helmet, cutting costs by 66.3% compared to competition.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: space,
+    
+    demo: 'https://engineering.sfsu.edu/research-labs-and-centers',
+
+  },
+
+
   {
     id: 'project-1',
     name: 'SF Maps',
@@ -178,7 +228,7 @@ const projects = [
       },
     ],
     image: leaderboard,
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+
   },
   {
     id: 'project-3',
@@ -202,7 +252,9 @@ const projects = [
     
     demo: 'https://www.youtube.com/watch?v=Abzka1Uw9EU&list=PLROWtI7htoKQopkDBCo5bz79M-w0orAY4&index=3&t=1s',
   },
- 
+
+
+
 ];
 
 export { services, technologies, experiences, projects };

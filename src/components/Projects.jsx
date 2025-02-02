@@ -7,7 +7,6 @@ import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import HarvardSum from '../assets/projects/HarvardSum.pdf';
 
-
 const ProjectCard = ({
   id,
   name,
@@ -90,14 +89,32 @@ const ProjectCard = ({
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
               onClick={() => {
+                console.log(`Clicked project: ${id}, Demo link: ${demo}`); // Debugging
+              
                 if (id === 'project-1') {
-                  window.open(demo, '_blank');
+                  if (demo) {
+                    console.log(`Opening demo: ${demo}`);
+                    window.open(demo, '_blank');
+                  } else {
+                    console.log("No demo link found.");
+                  }
                 } else if (id === 'project-2') {
-                  window.open(HarvardSum, '_blank'); // Ensure you have imported HarvardSum correctly
+                  console.log("Opening HarvardSum PDF");
+                  window.open(HarvardSum, '_blank'); 
                 } else if (id === 'project-3') {
+                  console.log("Opening YouTube link");
                   window.open('https://www.youtube.com/watch?v=Abzka1Uw9EU&list=PLROWtI7htoKQopkDBCo5bz79M-w0orAY4&index=3&t=1s', '_blank');
+                } else if (id === 'project-4') {
+                  console.log("Opening Research Lab page");
+                  window.open('https://engineering.sfsu.edu/research-labs-and-centers', '_blank');
+                } else if (id === 'project-5') {
+                  console.log("Opening Infinity Helmet");
+                  window.open('https://drive.google.com/file/d/17e7uTQSKG-kt5KvTS65ap-Cg_npTB8Mg/view?usp=sharing', '_blank');
+                } else {
+                  console.log("No matching project found.");
                 }
               }}
+              
               onMouseOver={() => {
                 document
                   .querySelector('.btn-icon')
@@ -123,9 +140,10 @@ const ProjectCard = ({
   );
 };
 
-
 const Projects = () => {
   const [active, setActive] = useState('project-2');
+
+  console.log("Project Data:", projects);  // Debugging
 
   return (
     <div className="-mt-[6rem]">
@@ -138,10 +156,10 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px] text-justify">
-      This page details my project experience, highlighting my work on real-world 
-      challenges and the steps I took to approach each. One code repository linked 
-      and other projects explained in full shows my adaptability, technical insight,
-       and commitment to efficient problem-solving.
+          This page details my project experience, highlighting my work on real-world 
+          challenges and the steps I took to approach each. One code repository linked 
+          and other projects explained in full shows my adaptability, technical insight,
+           and commitment to efficient problem-solving.
         </motion.p>
       </div>
 
