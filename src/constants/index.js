@@ -123,7 +123,6 @@ const technologies = [
     icon: docker,
   },
 ];
-
 const experiences = [
   {
     title: 'Resident Assistant',
@@ -132,15 +131,22 @@ const experiences = [
     iconBg: '#333333',
     date: 'Aug 2024 - present',
   },
-
+  {
+    title: 'Research Assistant',
+    company_name: 'Nano Electronics and Computing Research Laboratory',
+    icon: nyeusi,
+    iconBg: '#000000',
+    date: 'Aug 2024 -  present',
+  },
 ];
+
 
 const projects = [
 
   {
     id: 'project-4',
-    name: 'Nano-Electronics and Computing Research Laboratory',
-    description: 'Engaging job shadowing and gaining firsthand experience in computing circuits',
+    name: 'SFSU Solar Regatta',
+    description: ' Participated in the 2025 Solar Regatta, helping design and race a solar-powered boat. Worked on system integration, testing, and performance optimization alongside a multidisciplinary team.',
     tags: [
       {
         name: 'nextjs',
@@ -155,9 +161,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
+    image: movie,
     
-    demo: 'https://engineering.sfsu.edu/research-labs-and-centers',
+    demo: 'https://engineering.sfsu.edu/solar-regatta-spring-2025',
 
   },
 
@@ -181,7 +187,7 @@ const projects = [
     ],
     image: space,
     
-    demo: 'https://engineering.sfsu.edu/research-labs-and-centers',
+    demo: 'https://engineering.sfsu.edu/solar-regatta-spring-2025',
 
   },
 
