@@ -7,6 +7,7 @@ import {
   Navbar,
   Tech,
   Projects,
+   Awards,
 } from './components';
 
 const App = () => {
@@ -26,7 +27,11 @@ const App = () => {
           <Tech />
         </div>
 
-        <Projects/>
+        <Projects />
+        <div className="-mt-64">
+         <Awards />
+          </div>
+
 
         <div
           className="bg-experience bg-cover bg-center bg-no-repeat 

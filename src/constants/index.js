@@ -40,10 +40,17 @@ export const navLinks = [
     id: 'projects',
     title: 'Projects',
   },
+  
+  { id: 'awards',
+     title: 'Awards'
+    
+    },
   {
     id: 'contact',
     title: 'Contact',
   },
+ 
+
 ];
 
 const services = [
@@ -132,7 +139,7 @@ const experiences = [
     date: 'Aug 2024 - present',
   },
   {
-    title: 'Research Assistant',
+    title: 'Research Intern',
     company_name: 'Nano Electronics and Computing Research Laboratory',
     icon: nyeusi,
     iconBg: '#000000',
@@ -146,7 +153,7 @@ const projects = [
   {
     id: 'project-4',
     name: 'SFSU Solar Regatta',
-    description: ' Participated in the 2025 Solar Regatta, helping design and race a solar-powered boat. Worked on system integration, testing, and performance optimization alongside a multidisciplinary team.',
+    description: 'Participated in the 2025 Solar Regatta, helping design and race a solar-powered boat. Worked on system integration, testing, and performance optimization alongside a multidisciplinary team.',
     tags: [
       {
         name: 'nextjs',
@@ -161,9 +168,11 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
+    
     image: movie,
     
     demo: 'https://engineering.sfsu.edu/solar-regatta-spring-2025',
+
 
   },
 
@@ -187,7 +196,7 @@ const projects = [
     ],
     image: space,
     
-    demo: 'https://engineering.sfsu.edu/solar-regatta-spring-2025',
+    demo: 'https://drive.google.com/file/d/17e7uTQSKG-kt5KvTS65ap-Cg_npTB8Mg/view?usp=sharing',
 
   },
 
@@ -263,4 +272,36 @@ const projects = [
 
 ];
 
-export { services, technologies, experiences, projects };
+const awards = [
+  {
+    title: '1st Place - Hackathon',
+    description: 'Developed an anti-harassment algorithm, securing 1st place at a university-wide hackathon.',
+
+  },
+  {
+    title: 'Best Design - SF Maps',
+    description: 'Recognized for exceptional design in a web mapping tool for campus navigation.',
+   
+  },
+  {
+    title: 'Diana T.Y. Chung and Henry WS Chung Memorial Scholarship',
+    description: 'Awarded based on academic merit and financial need, with higher consideration given to academic merit',
+   
+  },
+  {
+    title: 'San Francisco State University Deans List academic year 2023-2024',
+    description: 'Students must have completed the semester with a GPA of 3.25 or greater.',
+   
+  },
+
+  {
+    title: 'Best Leader Award, Robotics Summer Camp',
+    description: 'Recognized for outstanding leadership, teamwork, and project management in successfully guiding a team through a robotics competition.',
+   
+  },
+  
+];
+
+
+
+export { services, technologies, experiences, projects, awards };
