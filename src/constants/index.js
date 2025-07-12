@@ -274,8 +274,8 @@ const projects = [
 
 const awards = [
   {
-    title: '1st Place - Hackathon',
-    description: 'Developed an anti-harassment algorithm, securing 1st place at a university-wide hackathon.',
+    title: 'Diana T.Y. Chung and Henry WS Chung Memorial Scholarship ',
+    description: 'Awarded based on academic merit and financial need, with higher consideration given to academic merit.',
 
   },
   {
@@ -284,8 +284,8 @@ const awards = [
    
   },
   {
-    title: 'Diana T.Y. Chung and Henry WS Chung Memorial Scholarship',
-    description: 'Awarded based on academic merit and financial need, with higher consideration given to academic merit',
+    title: '1st Place - Hackathon',
+    description: 'Developed an anti-harassment algorithm, securing 1st place at a university-wide hackathon.',
    
   },
   {

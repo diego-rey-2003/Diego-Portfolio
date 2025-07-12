@@ -27,10 +27,13 @@ const App = () => {
           <Tech />
         </div>
 
-        <Projects />
-        <div className="-mt-64">
-         <Awards />
-          </div>
+       <Projects />
+
+{/* Reduced gap and correct z-index */}
+<div className="-mt-400px relative z-30">
+  <Awards />
+</div>
+
 
 
         <div

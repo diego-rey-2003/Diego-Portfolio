@@ -8,33 +8,32 @@ const AwardCard = ({ title, description, date, index }) => (
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: index * 0.2 }}
-    className="bg-[#1e1e1e] p-6 rounded-xl shadow-md"
+    className="bg-[#1e1e1e] p-6 rounded-xl shadow-md w-full"
   >
     <h3 className="text-white text-xl font-semibold">{title}</h3>
     <p className="text-gray-300 mt-2">{description}</p>
-    <p className="text-sm text-gray-400 mt-1 italic">{date}</p>
+    {date && <p className="text-sm text-gray-400 mt-1 italic">{date}</p>}
   </motion.div>
 );
 
 const Awards = () => {
   return (
-    <div className="w-full bg-night">
-      {/* Title Section */}
-      <section className="h-screen flex items-center justify-center">
-      <motion.h1
-  initial={{ opacity: 0, y: 50, letterSpacing: '-0.05em' }}
-  whileInView={{ opacity: 1, y: 0, letterSpacing: '0.2em' }}
-  transition={{ duration: 1, ease: 'easeOut' }}
-  className="text-white text-[60px] sm:text-[96px] uppercase font-bold"
-  style={{ fontFamily: 'Inter, sans-serif' }}
->
-  Awards
-</motion.h1>
-
+    <div className="relative z-0 w-full bg-night">
+      {/* Animated Fullscreen Title */}
+      <section className="h-[80vh] sm:h-screen flex items-center justify-center relative z-10 bg-night pointer-events-none">
+        <motion.h1
+          initial={{ opacity: 0, y: 50, letterSpacing: '-0.05em' }}
+          whileInView={{ opacity: 1, y: 0, letterSpacing: '0.2em' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className="text-white text-[60px] sm:text-[96px] uppercase font-bold"
+          style={{ fontFamily: 'Inter, sans-serif' }}
+        >
+          Awards
+        </motion.h1>
       </section>
 
-      {/* Awards Content */}
-      <section className="pt-10 pb-40 px-6 flex flex-col items-center">
+      {/* Awards Content Section */}
+      <section className="pt-20 sm:pt-10 pb-40 px-6 flex flex-col items-center bg-night relative z-0">
         <div className="max-w-5xl w-full">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -44,6 +43,7 @@ const Awards = () => {
           >
             Recognition
           </motion.p>
+
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
